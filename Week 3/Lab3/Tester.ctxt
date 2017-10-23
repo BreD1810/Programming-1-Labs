@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tester
+comment0.text=\r\n\ Test\ harness\ for\ COMP1202\ Lab\ 3.\r\n\ @author\ systjeh\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ testPart3a()
+comment2.text=\r\n\tpublic\ static\ void\ testPart2c()\ {\r\n\t\tSystem.out.println("---\ Part\ 2c\ ---");\r\n\t\tSystem.out.println();\r\n\ \r\n\t\tCardLock\ lock\ \=\ new\ CardLock();\r\n\t\tSmartCard\ cardA\ \=\ new\ SmartCard("Anna\ Undergrad");\r\n\t\tSmartCard\ cardB\ \=\ new\ SmartCard("Dr.\ Bob\ Lecturer");\r\n\t\tcardB.setStaff(true);\r\n\ \r\n\t\tSystem.out.println("*\ Toggling\ the\ lock\ to\ allow\ both\ students\ and\ staff...");\r\n\t\tlock.toggleStudentAccess();\r\n\t\tSystem.out.println();\r\n\ \r\n\t\tSystem.out.println("*\ Swiping\ "\ +\ cardA.getOwner()\ +\ "'s\ card");\r\n\t\tlock.swipeCard(cardA);\r\n\t\tSystem.out.println("Is\ the\ card\ lock\ unlocked?\ "\ +\ lock.isUnlocked());\r\n\t\tSystem.out.println();\r\n\ \r\n\t\tSystem.out.println("*\ Swiping\ "\ +\ cardB.getOwner()\ +\ "'s\ card");\r\n\t\tlock.swipeCard(cardB);\r\n\t\tSystem.out.println("Is\ the\ card\ lock\ unlocked?\ "\ +\ lock.isUnlocked());\r\n\t\tSystem.out.println();\r\n\ \r\n\t\tSystem.out.println("*\ Toggling\ the\ lock\ to\ allow\ only\ staff...");\r\n\t\tlock.toggleStudentAccess();\r\n\t\tSystem.out.println();\r\n\ \r\n\t\tSystem.out.println("*\ Swiping\ "\ +\ cardA.getOwner()\ +\ "'s\ card");\r\n\t\tlock.swipeCard(cardA);\r\n\t\tSystem.out.println("Is\ the\ card\ lock\ unlocked?\ "\ +\ lock.isUnlocked());\r\n\t\tSystem.out.println();\r\n\ \r\n\t\tSystem.out.println("*\ Swiping\ "\ +\ cardB.getOwner()\ +\ "'s\ card");\r\n\t\tlock.swipeCard(cardB);\r\n\t\tSystem.out.println("Is\ the\ card\ lock\ unlocked?\ "\ +\ lock.isUnlocked());\r\n\t\tSystem.out.println();\r\n\t}\r\n
+comment3.params=
+comment3.target=void\ testPart3b()
+comment4.params=
+comment4.target=void\ testPart3c()
+numComments=5
