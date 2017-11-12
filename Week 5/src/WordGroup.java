@@ -5,22 +5,29 @@ public class WordGroup {
 
 	private String words;
 	
+	/*
+	 * Constructor - converts the original word to lower case
+	 */
 	WordGroup(String original)
 	{
-		//Constructor - converts the original word to lower case
 		words = original.toLowerCase();
 	}
 	
+	/*
+	 * Split the words variable into seperate words to be returned as a string array
+	 */
 	public String[] getWordArray()
 	{
-		//Split the words variable into separate words to be returned as a string array
+		//Split the long string every time there is a space
 		return words.split(" ");
 	}
 	
+	/*
+	 * Create a HashSet from 2 word groups
+	 * Return a HashSet of type String
+	 */
 	public HashSet<String> getWordSet(WordGroup wordGroup)
 	{
-		//Create a hash set from 2 word groups and return the hash set
-		
 		HashSet<String> wordSet = new HashSet<String>();
 		
 		//Add each element from the current word group, and the supplied word group
@@ -36,12 +43,15 @@ public class WordGroup {
 		return wordSet;
 	}
 	
+	/*
+	 * Create a HashMap of all the words linked to their word count
+	 * Return the HashMap
+	 */
 	public HashMap<String, Integer> getWordCounts()
 	{
-		//Create a hash map of all the words linked to their word count in the sentence and return it
 		HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
 		
-		for (String word: this.getWordArray())
+		for (String word: getWordArray())
 		{
 			//If the word is already present, increment its value, otherwise add it to the hash map
 			if (hashMap.containsKey(word))
