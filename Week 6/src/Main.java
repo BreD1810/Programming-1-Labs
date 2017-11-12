@@ -1,32 +1,38 @@
 public class Main 
 {
 	
-	/*
-	 * Main method
-	 * Create animals, test methods
-	 */
 	public static void main(String[] args)
 	{
-		//Create animals
+		/*
+		 * Create animals
+		 */
 		Wolf myWolf = new Wolf("Wiliam", 5);
 		Parrot myParrot = new Parrot("Percy", 3);
 		Mouse myMouse = new Mouse("Mickey", 1);
 		
-		//Get names and ages
+		/*
+		 * Get names and ages of the animals
+		 */
 		System.out.println("There is a wolf named " + myWolf.getName() + " aged " + myWolf.getAge());
 		System.out.println("There is a parrot named " + myParrot.getName() + " aged " + myParrot.getAge());
 		System.out.println("There is a mouse named " + myMouse.getName() + " aged " + myMouse.getAge());
 		
-		//Make noises
+		/*
+		 * Get the animals to make noises
+		 */
 		myParrot.makeNoise();
 		myWolf.makeNoise();
 		myMouse.makeNoise();
 		
-		//Create food
+		/*
+		 * Create food
+		 */
 		Meat meatFood = new Meat("Beef");
 		Plant plantFood = new Plant("Lettuce");
 		
-		//Attempt to feed the animals
+		/*
+		 * Attempt to feed the animals
+		 */
 		try
 		{
 			//With correct food

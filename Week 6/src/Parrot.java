@@ -2,8 +2,7 @@ public class Parrot extends Omnivore
 {
 	
 	/*
-	 * Constructor
-	 * Set the name and age
+	 * Constructor - Set the name and age
 	 */
 	Parrot(String name, int age)
 	{

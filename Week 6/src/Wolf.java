@@ -2,8 +2,7 @@ public class Wolf extends Carnivore
 {
 	
 	/*
-	 * Constructor
-	 * Set the name and age
+	 * Constructor - Set the name and age
 	 */
 	Wolf(String name, int age)
 	{

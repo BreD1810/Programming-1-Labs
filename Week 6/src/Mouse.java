@@ -2,8 +2,7 @@ public class Mouse extends Herbivore
 {
 	
 	/*
-	 * Constructor
-	 * Set the name and age
+	 * Constructor - Set the name and age
 	 */
 	Mouse(String name, int age)
 	{

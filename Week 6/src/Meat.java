@@ -6,6 +6,7 @@ public class Meat extends Food
 	 */
 	Meat(String name)
 	{
+		//Execute the Food constructor
 		super(name);
 	}
 	
