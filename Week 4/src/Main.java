@@ -78,7 +78,15 @@ public class Main
 		/*
 		 * Change last admin's type to user
 		 */
-		administrators.getUser(2).setUserType("user");
+		adminIter = administrators.getUserIterator();
+		User lastUser = null;
+		//Loop through all of the users
+		while (adminIter.hasNext())
+        {
+            //Save the last user of the iteration
+            lastUser = adminIter.next();
+        }
+		lastUser.setUserType("user");
 		System.out.println("Last admin user has been changed to type user");
 		System.out.println();
 		
@@ -92,9 +100,10 @@ public class Main
 		administrators.printUsernames();
 
 		/*
-		 *Changing the users type in the administrators group means that they are no longer an admin,
-		 * yet are in the administrators group. This issue could be solved by rerunning the code
-		 * that removes non-admins from the admins group.
+		 * Changing the users type in the administrators group means that they are no longer an admin,
+		 * yet are in the administrators group. The users group has their old status of admin.
+		 * This issue could be solved by rerunning the code that removes non-admins from the admins group,
+		 * and then using the getUser method on the userGroup to change the users type there.
 		 */
 	}
 	
