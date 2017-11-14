@@ -11,17 +11,13 @@ public class Main
 		//Input a number from the user using toolbox
 		number = myToolbox.readIntegerFromCmd();
 		
-		/*
-		 * Print a multiplication sequence for the users number using a for loop
-		 */
+		/*Print a multiplication sequence for the users number using a for loop*/
 		for(int i = 1; i <= 20; i++)
 		{
 			System.out.println(number * i);
 		}
 		
-		/*
-		 * Calculate how many successive integers need to be summed to make a total over 500.
-		 */
+		/*Calculate how many successive integers need to be summed to make a total over 500.*/
 		int sum = 0;
 		int counter = 1;
 		while(sum <= 500)
@@ -33,18 +29,14 @@ public class Main
 		System.out.println("The total is " + sum + ". " + counter + " iterations were needed to do this.");
 		System.out.println();
 
-		/*
-		 * Create a new UserGroup, add data, and print all of the usernames from the group
-		 */
+		/*Create a new UserGroup, add data, and print all of the usernames from the group*/
 		UserGroup userGroup = new UserGroup();
 		userGroup.addSampleData();
 		System.out.println("Here are the users:");
 		userGroup.printUsernames();
 		System.out.println();
 
-		/*
-		 * Remove users from the group
-		 */
+		/*Remove users from the group*/
 		userGroup.removeFirstUser();
 		userGroup.removeLastUser();
 		userGroup.removeUser("pm5");
@@ -52,9 +44,7 @@ public class Main
 		userGroup.printUsernames();
 		System.out.println();
 
-		/*
-		 * Create an adminitstrators group
-		 */
+		/*Create an adminitstrators group*/
 		UserGroup administrators = new UserGroup();
 		administrators.addSampleData();
 		Iterator<User> adminIter = administrators.getUserIterator();
@@ -68,16 +58,12 @@ public class Main
 			}
 		}
 
-		/*
-		 * Print all admins
-		 */
+		/*Print all admins*/
 		System.out.println("Here are the administrators:");
 		administrators.printUsernames();
 		System.out.println();
 
-		/*
-		 * Change last admin's type to user
-		 */
+		/*Change last admin's type to user*/
 		adminIter = administrators.getUserIterator();
 		User lastUser = null;
 		//Loop through all of the users
@@ -90,9 +76,7 @@ public class Main
 		System.out.println("Last admin user has been changed to type user");
 		System.out.println();
 		
-		/*
-		 * Print both user groups
-		 */
+		/*Print both user groups*/
 		System.out.println("Users:");
 		userGroup.printUsernames();
 		System.out.println();

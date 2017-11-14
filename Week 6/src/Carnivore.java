@@ -1,9 +1,7 @@
 abstract class Carnivore extends Animal
 {
 	
-	/*
-	 * Make the animal eat some food, checking if it is meat
-	 */
+	/*Make the animal eat some food, checking if it is meat*/
 	public void eat(Food food) throws Exception
 	{
 		if(food instanceof Plant)

@@ -6,17 +6,13 @@ public class UserGroup
 	
 	private ArrayList<User> userList;
 	
-	/*
-	 * Constructor - initialise the user list as an empty arraylist of type User
-	 */
+	/*Constructor - initialise the user list as an empty arraylist of type User*/
 	UserGroup()
 	{
 		userList = new ArrayList<User>();
 	}
 	
-	/*
-	 * Create 10 users and add them to the user list
-	 */
+	/*Create 10 users and add them to the user list*/
 	public void addSampleData()
 	{
 		User user1 = new User("bg1", "user", "Bradley");
@@ -41,18 +37,14 @@ public class UserGroup
 		userList.add(user10);
 	}
 	
-	/*
-	 * Return the user in the supplied slot
-	 */
+	/*Return the user in the supplied slot*/
 	public User getUser(int slot)
 	{
 		//Arraylist is 0 indexed, hence -1 in the parameter
 		return userList.get(slot - 1); 
 	}
 	
-	/*
-	 * Print all usernames and their type from the arraylist
-	 */
+	/*Print all usernames and their type from the arraylist*/
 	public void printUsernames()
 	{
 		//Loop through all users in the userlist
@@ -64,25 +56,19 @@ public class UserGroup
 		
 	}
 	
-	/*
-	 * Remove the first user in the list
-	 */
+	/*Remove the first user in the list*/
 	public void removeFirstUser()
 	{
 		userList.remove(0);
 	}
 	
-	/*
-	 * Remove the last user in the list
-	 */
+	/*Remove the last user in the list*/
 	public void removeLastUser()
 	{
 		userList.remove(userList.size() - 1);
 	}
 	
-	/*
-	 * Remove a user with a supplied username
-	 */
+	/*Remove a user with a supplied username*/
 	public void removeUser(String username)
 	{
 		Iterator<User> iter = userList.iterator();
