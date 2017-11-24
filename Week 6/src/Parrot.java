@@ -1,11 +1,10 @@
 public class Parrot extends Omnivore
 {
 	
-	/*Constructor - Set the name and age*/
+	/*Constructor - set the name and age using the superclass method*/
 	Parrot(String name, int age)
 	{
-		this.name = name;
-		this.age = age;
+		super(name, age);
 	}
 	
 	/*Print to the console to simulate making a noise*/

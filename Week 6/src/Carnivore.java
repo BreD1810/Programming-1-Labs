@@ -1,6 +1,12 @@
 abstract class Carnivore extends Animal
 {
 	
+	/*Constructor - set the name and age using the superclass method*/
+	public Carnivore(String name, int age)
+	{
+		super(name, age);
+	}
+	
 	/*Make the animal eat some food, checking if it is meat*/
 	public void eat(Food food) throws Exception
 	{

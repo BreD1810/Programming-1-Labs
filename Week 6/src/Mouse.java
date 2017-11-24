@@ -1,11 +1,10 @@
 public class Mouse extends Herbivore
 {
 	
-	/*Constructor - Set the name and age*/
-	Mouse(String name, int age)
+	/*Constructor - set the name and age using the superclass method*/
+	public Mouse(String name, int age)
 	{
-		this.name = name;
-		this.age = age;
+		super(name, age);
 	}
 	
 	/*Print to the console to simulate making a noise*/
