@@ -41,7 +41,7 @@ public abstract class Transport
 		this.name = name;
 	}
 	
-	//Make the transport method move
+	/*Make the transport method move - all child classes need to have this method*/
 	public abstract void move();
 	
 }

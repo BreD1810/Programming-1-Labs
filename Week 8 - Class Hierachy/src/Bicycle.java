@@ -22,7 +22,7 @@ public class Bicycle extends Cycle
 	/*Check the handle height of the bicycle*/
 	public void checkHandleHeight()
 	{
-		//Code here to check height of the handlbars
+		//Code here to check height of the handlebars
 	}
 	
 }

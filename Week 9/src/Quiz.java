@@ -41,9 +41,7 @@ public class Quiz
 			}
 			else
 			{
-				System.out.print("You are incorrect. The correct answer was: ");
-				System.out.print(card.getAnswer());
-				System.out.println();
+				System.out.println("You are incorrect. The correct answer was: " + card.getAnswer());
 			}
 		}
 		
@@ -90,7 +88,7 @@ public class Quiz
 			total++;
 			
 			//Check if the user was correct
-			if(userAnswerList.get(i).equals(cardList.get(i).getAnswer()))
+			if(userAnswerList.get(i).toLowerCase().equals(cardList.get(i).getAnswer().toLowerCase()))
 			{
 				/* If they're correct:
 				 * Print the question, their answer and correct. 

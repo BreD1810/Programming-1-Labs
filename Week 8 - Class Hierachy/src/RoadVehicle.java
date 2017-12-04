@@ -16,5 +16,4 @@ public abstract class RoadVehicle extends Transport
 	/*Method to check the tread depth on the tire*/
 	public abstract void checkTreadDepth();
 	
-	
 }

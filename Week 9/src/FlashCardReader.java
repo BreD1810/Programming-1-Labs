@@ -24,12 +24,13 @@ public class FlashCardReader
 		}
 	}
 	
-	/*Returns a line from the file and returns it*/
+	/*Gets a line from the file and returns it*/
 	private String getLine()
 	{
 		String line = "";
 		try
 		{
+			//Read a line from the file
 			line = reader.readLine();
 		}
 		catch(IOException ioe)
@@ -47,6 +48,7 @@ public class FlashCardReader
 		
 		try
 		{
+			//Check if the file is ready
 			answer = reader.ready();
 		}
 		catch(IOException ioe)
@@ -58,7 +60,7 @@ public class FlashCardReader
 		return answer;
 	}
 	
-	/*return an array list of flashcards*/
+	/*Return an array list of flashcards*/
 	public ArrayList<FlashCard> getFlashCards()
 	{
 		ArrayList<FlashCard> cardList = new ArrayList<FlashCard>();

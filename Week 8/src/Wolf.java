@@ -10,6 +10,7 @@ public class Wolf extends Carnivore
 	/*Second constructor - no arguments*/
 	public Wolf()
 	{
+		//Call the parent class constructor
 		super();
 	}
 	

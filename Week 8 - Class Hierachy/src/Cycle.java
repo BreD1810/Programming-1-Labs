@@ -14,7 +14,7 @@ public abstract class Cycle extends Transport
 		super(name, capacity);
 	}
 	
-	/*Method to check handle bar height*/
+	/*Method to check handle bar height - all child classes will need to have this method*/
 	public abstract void checkHandleHeight();
 	
 }

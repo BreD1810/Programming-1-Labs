@@ -4,17 +4,21 @@ abstract class Animal implements Comparable<Animal>
 	protected String name;
 	protected int age;
 	
+	/*Compare this animal's age to another animal's*/
 	public int compareTo(Animal inputAnimal)
 	{
 		if(inputAnimal.getAge() > this.getAge())
 		{
+			//Return a negative value if the current object is less than the given object
 			return -1;
 		}
 		else if(inputAnimal.getAge() < this.getAge())
 		{
+			//Return a positive value if the current object is more than the given object
 			return 1;
 		}
 		
+		//Return 0 if they are equal
 		return 0;
 	}
 	
@@ -28,6 +32,7 @@ abstract class Animal implements Comparable<Animal>
 	/*Second constructor - no arguments given*/
 	public Animal()
 	{
+		//Call the other constructor using the name "newborn" and age 0
 		this("newborn", 0);
 	}
 	
@@ -52,6 +57,7 @@ abstract class Animal implements Comparable<Animal>
 	/*Make an animal eat a select number of times*/
 	public void eat(Food food, int numberOfTimes) throws Exception
 	{
+		//Keep eating for the number of times input
 		while(numberOfTimes > 0)
 		{
 			eat(food);

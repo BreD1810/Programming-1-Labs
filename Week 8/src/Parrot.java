@@ -10,6 +10,7 @@ public class Parrot extends Omnivore
 	/*Second constructor - only given an age*/
 	public Parrot(int age)
 	{
+		//Call the other constructor with the same age, but name "Polly"
 		this("Polly", age);
 	}
 	

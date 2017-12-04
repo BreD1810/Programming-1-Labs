@@ -10,6 +10,7 @@ abstract class Carnivore extends Animal
 	/*Second constructor - no arguments given*/
 	public Carnivore()
 	{
+		//Call the parent class constructor
 		super();
 	}
 	
